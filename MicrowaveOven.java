@@ -27,15 +27,15 @@ public class MicrowaveOven {
 		if(quantity == 2) {
 			double totalPrice = (quantity*price) - ((quantity*price)*0.05);
 			System.out.println("Discount percentage : 5%");
-			System.out.printf("The total price is RM%.2f%n", totalPrice);
+			System.out.printf("The total price is RM%.2f", totalPrice);
 		}else if(quantity >= 3){
 			double totalPrice = (quantity*price) - ((quantity*price)*0.08);	
 			System.out.println("Discount percentage : 8%");
-			System.out.printf("The total price is RM%.2f%n", totalPrice);
+			System.out.printf("The total price is RM%.2f", totalPrice);
 		}else {
 			double totalPrice = (quantity*price);
 			System.out.println("No discount.");
-			System.out.printf("The total price is RM%.2f%n", totalPrice);
+			System.out.printf("The total price is RM%.2f", totalPrice);
 		}
 		System.out.println();
 	}
@@ -71,21 +71,21 @@ public class MicrowaveOven {
 		
 		switch (paymentMethod) {
 		case 1:
-			double tngPayment = (price+delivery) - (0.06*price);
+			double tngPayment = (price+delivery) - (0.06*(price+delivery));
 			System.out.println("Your payment will be discount 6%.");
-			System.out.printf("Your final total payment is RM%.2f%n", tngPayment );
+			System.out.printf("Your final total payment is RM%.2f", tngPayment );
 			break;
 			
 		case 2:
-			double grabPayment = (price+delivery) - (0.05*price);
+			double grabPayment = (price+delivery) - (0.05*(price+delivery));
 			System.out.println("Your payment will be discount 5%.");
-			System.out.printf("Your final total payment is RM%.2f%n", grabPayment );
+			System.out.printf("Your final total payment is RM%.2f", grabPayment );
 			break;
 		
 		case 3:
-			double cardPayment = (price+delivery) + (0.02*price);
+			double cardPayment = (price+delivery) + (0.02*(price+delivery));
 			System.out.println("Your payment will be charge 2%.");
-			System.out.printf("Your final total payment is RM%.2f%n", cardPayment );
+			System.out.printf("Your final total payment is RM%.2f", cardPayment );
 			break;
 		}
 		System.out.println();
