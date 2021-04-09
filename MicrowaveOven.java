@@ -72,19 +72,19 @@ public class MicrowaveOven {
 		switch (paymentMethod) {
 		case 1:
 			double tngPayment = (price+delivery) - (0.06*(price+delivery));
-			System.out.println("Your payment will be discount 6%.");
+			System.out.println("Your payment will be discounted 6%.");
 			System.out.printf("Your final payment is RM%.2f\n", tngPayment );
 			break;
 			
 		case 2:
 			double grabPayment = (price+delivery) - (0.05*(price+delivery));
-			System.out.println("Your payment will be discount 5%.");
+			System.out.println("Your payment will be discounted 5%.");
 			System.out.printf("Your final payment is RM%.2f\n", grabPayment );
 			break;
 		
 		case 3:
 			double cardPayment = (price+delivery) + (0.02*(price+delivery));
-			System.out.println("Your payment will be charge 2%.");
+			System.out.println("Your payment will be charged 2%.");
 			System.out.printf("Your final payment is RM%.2f\n", cardPayment );
 			break;
 		}
